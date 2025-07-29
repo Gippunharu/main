@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기쁜하루 - 사진 잘 찍는 법</title>
+    <title>기쁜하루 - 백일상 사진 잘 찍는법</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -31,13 +31,14 @@
             margin-right: 0.75rem;
             color: #14B8A6; /* Teal color */
         }
-        .item-description h3 {
-            font-weight: 600;
+        .item-description {
+            font-weight: 500;
             color: #374151;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
         }
-        .item-description p {
-            font-size: 0.9rem;
+        .item-description .tip-text {
+            font-weight: 400;
+            font-size: 0.9em;
             color: #6B7280;
         }
         .tip-box {
@@ -61,78 +62,63 @@
         <!-- Header -->
         <div class="p-5 bg-teal-500 text-white flex items-center">
              <a href="#" class="mr-4"><i data-lucide="arrow-left"></i></a>
-             <h1 class="text-xl font-bold">사진 잘 찍는 법 (스마트폰 Ver.)</h1>
+             <h1 class="text-xl font-bold">백일상 사진 잘 찍는법</h1>
         </div>
 
         <div class="p-5">
             <div class="text-center mb-6 p-4 bg-teal-50 rounded-lg">
                 <p class="font-semibold text-teal-700">스마트폰 하나로 인생샷 남기기 📸</p>
-                <p class="text-sm text-gray-600 mt-1">어렵지 않아요! 몇 가지만 기억하면 전문가처럼 찍을 수 있어요.</p>
+                <p class="text-sm text-gray-600 mt-1">이것만 기억하면 전문가처럼 찍을 수 있어요.</p>
             </div>
 
             <!-- 촬영 전 준비 Card -->
             <div class="card">
                 <h2 class="card-title">
                     <i data-lucide="sparkles"></i>
-                    촬영 전, 이것부터 준비!
+                    촬영 전 준비
                 </h2>
-                <div class="space-y-4">
-                    <div class="item-description">
-                        <h3>✔️ 렌즈 닦기</h3>
-                        <p>가장 기본이지만 가장 중요해요. 부드러운 천으로 렌즈를 깨끗하게 닦아주세요. 화질이 달라져요!</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 조명은 자연광으로</h3>
-                        <p>가장 예쁜 조명은 햇빛! 낮 시간대 창가 근처에서 찍어보세요. 천장의 다운라이트 같은 강한 조명은 끄는 것이 좋습니다.</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 최적의 배경 찾기</h3>
-                        <p>가장 깔끔한 배경은 단색 벽지입니다. 커튼 앞도 좋지만, 역광이 심하면 아기 얼굴에 그림자가 생길 수 있으니 주의하세요.</p>
-                    </div>
+                <div class="space-y-3">
+                    <p class="item-description">✔️ <span class="font-bold">렌즈 닦기</span>: <span class="tip-text">화질이 달라져요!</span></p>
+                    <p class="item-description">✔️ <span class="font-bold">자연광 활용</span>: <span class="tip-text">창가 근처가 최고의 명당.</span></p>
+                    <p class="item-description">✔️ <span class="font-bold">다운라이트 끄기</span>: <span class="tip-text">얼굴에 그늘을 만들어요.</span></p>
+                    <p class="item-description">✔️ <span class="font-bold">역광 피하기</span>: <span class="tip-text">커튼 역광은 얼굴을 어둡게 만들어요.</span></p>
+                    <p class="item-description">✔️ <span class="font-bold">배경 정리</span>: <span class="tip-text">주인공은 아기니까요.</span></p>
                 </div>
             </div>
 
-            <!-- 스마트폰 기능 활용 Card -->
+            <!-- 촬영 꿀팁 Card -->
             <div class="card">
                 <h2 class="card-title">
                      <i data-lucide="smartphone"></i>
-                    스마트폰 기능 200% 활용법
+                    촬영 꿀팁
                 </h2>
-                <div class="space-y-4">
-                     <div class="item-description">
-                        <h3>✔️ 인물사진 모드 활용</h3>
-                        <p>배경은 흐릿하게, 아기는 선명하게 만들어줘서 훨씬 집중도 높은 사진을 찍을 수 있어요.</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 아기 눈높이에 맞추기</h3>
-                        <p>위에서 아래로 찍기보다, 몸을 낮춰 아기와 눈을 맞추고 찍어보세요. 훨씬 사랑스러운 사진이 나와요.</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 연사 기능으로 순간포착</h3>
-                        <p>활짝 웃는 순간은 찰나! 셔터를 길게 눌러 여러 장을 찍은 뒤 베스트컷을 고르는 '연사' 기능을 활용하세요.</p>
-                    </div>
+                <div class="space-y-3">
+                     <p class="item-description">✔️ <span class="font-bold">미리 구도 잡기</span>: <span class="tip-text">아기 앉히기 전 테스트 촬영!</span></p>
+                     <p class="item-description">✔️ <span class="font-bold">인물사진 모드</span>: <span class="tip-text">배경은 흐리게, 아기는 선명하게.</span></p>
+                     <p class="item-description">✔️ <span class="font-bold">아기 눈높이</span>: <span class="tip-text">몸을 낮춰서 찍어주세요.</span></p>
+                     <p class="item-description">✔️ <span class="font-bold">수직/수평 맞추기</span>: <span class="tip-text">격자(안내선)를 켜면 안정적.</span></p>
                 </div>
                  <div class="tip-box">
-                    <p><span class="font-bold">구도 Tip!</span> 카메라 설정에서 '격자(안내선)'를 켜고, 선에 맞춰 수직/수평을 맞추면 사진이 훨씬 안정적으로 보여요. 선이 만나는 지점에 아기를 배치하는 것도 좋은 방법입니다!</p>
+                    <p><span class="font-bold">연사 활용!</span> 활짝 웃는 순간은 연사로 찍고 베스트컷을 고르세요.</p>
                 </div>
             </div>
-
-            <!-- 보정 서비스 안내 Card (추가된 부분) -->
+            
+            <!-- 보정 서비스 안내 Card -->
             <div class="card pro-tip-card">
                 <h2 class="card-title">
                     <i data-lucide="wand-2" class="text-indigo-500"></i>
-                    전문가의 손길이 필요하다면?
+                    전문가의 손길
                 </h2>
                 <div class="item-description">
-                    <p>사진 촬영에 자신이 없거나 집안 배경이 어수선해서 아쉬운 분들은, 사진 보정 서비스를 제공하는 백일상 업체를 알아보는 것도 좋은 방법이에요. 전문가의 보정으로 더욱 완벽한 추억을 남길 수 있답니다.</p>
+                   <p>사진에 자신이 없거나, 집 배경이 어수선한 편이라면 보정 서비스를 제공하는 것도 좋은 방법이에요.</p>
                 </div>
             </div>
 
             <!-- CTA Button -->
             <div class="mt-2">
                 <button class="w-full bg-teal-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-teal-600 transition-colors flex items-center justify-center">
-                    <i data-lucide="image-plus" class="mr-2"></i>
-                    다른 아기들 백일사진 구경하기
+                    다음: 행사 전날, 당일 준비
+                    <i data-lucide="arrow-right" class="ml-2"></i>
                 </button>
             </div>
         </div>
