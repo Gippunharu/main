@@ -23,24 +23,24 @@
             background-color: #FFFBF5;
             color: #5d5d5d;
         }
-        .nav-active {
-            color: #D98B8B !important;
+       .nav-active {
+            color: #D98B8B!important;
             font-weight: 700;
         }
-        .content-section {
+       .content-section {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
-        .content-section.visible {
+       .content-section.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        .checkbox-custom:checked + label:before {
+       .checkbox-custom:checked + label:before {
             background-color: #FADCD9;
             border-color: #FADCD9;
         }
-        .checkbox-custom:checked + label:after {
+       .checkbox-custom:checked + label:after {
             content: '✔';
             position: absolute;
             left: 4px;
@@ -48,7 +48,7 @@
             color: #fff;
             font-size: 14px;
         }
-        .timeline-item::before {
+       .timeline-item::before {
             content: '';
             position: absolute;
             left: -29px;
@@ -57,7 +57,7 @@
             height: 100%;
             background-color: #FADCD9;
         }
-        .timeline-item::after {
+       .timeline-item::after {
             content: '';
             position: absolute;
             left: -35px;
@@ -85,15 +85,14 @@
     <main class="container mx-auto px-6 py-8 md:py-16 max-w-[1000px]">
 
         <section class="text-center mb-16 md:mb-24">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">우리 아기 백일, 초보 엄마도 완벽하게!</h1>
+            <h1 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">우리 아기 백일, 초보 엄마도 완벽하게!</h1>
             <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">아기의 100일을 축하하는 소중한 날, 사랑과 정성으로 가득한 백일상을 준비하는 모든 과정을 안내합니다.</p>
         </section>
 
-        <!-- 1. 준비하기 -->
         <section id="prepare" class="content-section mb-20 md:mb-32 scroll-mt-20">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Step 1. 준비하기</h2>
-                <p class="mt-3 text-gray-600">성공적인 백일 잔치를 위한 첫걸음입니다. 체크리스트를 따라 차근차근 계획하고, 의미있는 상차림과 의상을 준비해보세요.</p>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800">Step 1. 준비하기</h2>
+                <p class="mt-3 text-sm md:text-base text-gray-600">성공적인 백일 잔치를 위한 첫걸음입니다. 체크리스트를 따라 차근차근 계획하고, 의미있는 상차림과 의상을 준비해보세요.</p>
             </div>
 
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 mb-12">
@@ -102,19 +101,19 @@
                     <table class="w-full text-left text-sm md:text-base">
                         <thead class="bg-gray-50">
                             <tr>
-                                <th class="p-3 font-semibold text-gray-600">항목</th>
-                                <th class="p-3 font-semibold text-gray-600">준비 시기</th>
-                                <th class="p-3 font-semibold text-gray-600 text-center">완료</th>
+                                <th class="p-2 font-semibold text-gray-600">항목</th>
+                                <th class="p-2 font-semibold text-gray-600">준비 시기</th>
+                                <th class="p-2 font-semibold text-gray-600 text-center">완료</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-b"><td class="p-3 font-medium text-gray-700">백일상 콘셉트 결정</td><td class="p-3 text-gray-600">1-2개월 전</td><td class="p-3 text-center"><input type="checkbox" id="check1" class="checkbox-custom hidden"><label for="check1" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
-                            <tr class="border-b bg-gray-50/50"><td class="p-3 font-medium text-gray-700">손님 목록 및 초대장</td><td class="p-3 text-gray-600">1-2개월 전</td><td class="p-3 text-center"><input type="checkbox" id="check2" class="checkbox-custom hidden"><label for="check2" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
-                            <tr class="border-b"><td class="p-3 font-medium text-gray-700">장소 선정 (집/외부)</td><td class="p-3 text-gray-600">1-2개월 전</td><td class="p-3 text-center"><input type="checkbox" id="check3" class="checkbox-custom hidden"><label for="check3" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
-                            <tr class="border-b bg-gray-50/50"><td class="p-3 font-medium text-gray-700">아기 및 가족 의상 준비</td><td class="p-3 text-gray-600">2-3주 전</td><td class="p-3 text-center"><input type="checkbox" id="check4" class="checkbox-custom hidden"><label for="check4" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
-                            <tr class="border-b"><td class="p-3 font-medium text-gray-700">백일상 장식 용품 준비</td><td class="p-3 text-gray-600">2-3주 전</td><td class="p-3 text-center"><input type="checkbox" id="check5" class="checkbox-custom hidden"><label for="check5" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
-                            <tr class="border-b bg-gray-50/50"><td class="p-3 font-medium text-gray-700">떡 및 케이크 주문</td><td class="p-3 text-gray-600">1주 전</td><td class="p-3 text-center"><input type="checkbox" id="check6" class="checkbox-custom hidden"><label for="check6" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
-                            <tr><td class="p-3 font-medium text-gray-700">과일 및 식재료 구매</td><td class="p-3 text-gray-600">1주 전</td><td class="p-3 text-center"><input type="checkbox" id="check7" class="checkbox-custom hidden"><label for="check7" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr class="border-b"><td class="p-2 font-medium text-gray-700">백일상 콘셉트 결정</td><td class="p-2 text-gray-600">1-2개월 전</td><td class="p-2 text-center"><input type="checkbox" id="check1" class="checkbox-custom hidden"><label for="check1" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr class="border-b bg-gray-50/50"><td class="p-2 font-medium text-gray-700">손님 목록 및 초대장</td><td class="p-2 text-gray-600">1-2개월 전</td><td class="p-2 text-center"><input type="checkbox" id="check2" class="checkbox-custom hidden"><label for="check2" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr class="border-b"><td class="p-2 font-medium text-gray-700">장소 선정 (집/외부)</td><td class="p-2 text-gray-600">1-2개월 전</td><td class="p-2 text-center"><input type="checkbox" id="check3" class="checkbox-custom hidden"><label for="check3" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr class="border-b bg-gray-50/50"><td class="p-2 font-medium text-gray-700">아기 및 가족 의상 준비</td><td class="p-2 text-gray-600">2-3주 전</td><td class="p-2 text-center"><input type="checkbox" id="check4" class="checkbox-custom hidden"><label for="check4" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr class="border-b"><td class="p-2 font-medium text-gray-700">백일상 장식 용품 준비</td><td class="p-2 text-gray-600">2-3주 전</td><td class="p-2 text-center"><input type="checkbox" id="check5" class="checkbox-custom hidden"><label for="check5" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr class="border-b bg-gray-50/50"><td class="p-2 font-medium text-gray-700">떡 및 케이크 주문</td><td class="p-2 text-gray-600">1주 전</td><td class="p-2 text-center"><input type="checkbox" id="check6" class="checkbox-custom hidden"><label for="check6" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
+                            <tr><td class="p-2 font-medium text-gray-700">과일 및 식재료 구매</td><td class="p-2 text-gray-600">1주 전</td><td class="p-2 text-center"><input type="checkbox" id="check7" class="checkbox-custom hidden"><label for="check7" class="relative cursor-pointer w-5 h-5 block border-2 border-gray-300 rounded"></label></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -123,7 +122,7 @@
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
                     <h3 class="text-lg md:text-xl font-bold text-gray-700 mb-4 flex items-center"><span class="text-2xl mr-3">🍡</span> 정성 가득 떡과 과일</h3>
-                    <p class="text-gray-600 mb-4">음식 하나하나에 아기의 건강과 행복을 기원하는 마음을 담습니다.</p>
+                    <p class="text-sm md:text-base text-gray-600 mb-4">음식 하나하나에 아기의 건강과 행복을 기원하는 마음을 담습니다.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start"><span class="font-bold text-[#D98B8B] mr-2 mt-1">∙</span><div><strong class="text-gray-700">백설기:</strong> 순수함과 장수를 기원하며, 100명과 나누어 먹는 전통이 있어요.</div></li>
                         <li class="flex items-start"><span class="font-bold text-[#D98B8B] mr-2 mt-1">∙</span><div><strong class="text-gray-700">수수팥떡:</strong> 붉은 팥으로 액운을 막아 아기의 건강한 성장을 도와줍니다.</div></li>
@@ -133,7 +132,7 @@
                 </div>
                 <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
                     <h3 class="text-lg md:text-xl font-bold text-gray-700 mb-4 flex items-center"><span class="text-2xl mr-3">👘</span> 우리 아기, 빛나는 의상</h3>
-                    <p class="text-gray-600 mb-4">아기가 가장 편안하고 사랑스러워 보일 수 있는 옷을 선택하세요.</p>
+                    <p class="text-sm md:text-base text-gray-600 mb-4">아기가 가장 편안하고 사랑스러워 보일 수 있는 옷을 선택하세요.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start"><span class="font-bold text-[#D98B8B] mr-2 mt-1">∙</span><div><strong class="text-gray-700">편안함이 최우선:</strong> 부드럽고 통기성 좋은 소재를 선택해 아기 피부를 보호해주세요.</div></li>
                         <li class="flex items-start"><span class="font-bold text-[#D98B8B] mr-2 mt-1">∙</span><div><strong class="text-gray-700">전통 한복:</strong> 시대를 초월하는 우아함으로 특별한 날의 의미를 더합니다.</div></li>
@@ -144,11 +143,10 @@
             </div>
         </section>
 
-        <!-- 2. 실행하기 -->
         <section id="execute" class="content-section mb-20 md:mb-32 scroll-mt-20">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Step 2. 실행하기</h2>
-                <p class="mt-3 text-gray-600">드디어 백일 당일! 여유로운 마음으로 준비하고, 아름다운 순간을 사진으로 남기는 비법을 확인하세요.</p>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800">Step 2. 실행하기</h2>
+                <p class="mt-3 text-sm md:text-base text-gray-600">드디어 백일 당일! 여유로운 마음으로 준비하고, 아름다운 순간을 사진으로 남기는 비법을 확인하세요.</p>
             </div>
 
             <div class="grid md:grid-cols-5 gap-8 md:gap-12">
@@ -157,11 +155,11 @@
                         <h3 class="text-lg md:text-xl font-bold text-gray-700 mb-6">행사 전날 & 당일 타임라인</h3>
                         <div class="relative pl-4 border-l-2 border-transparent">
                             <div class="timeline-item relative pb-8">
-                                <h4 class="font-bold text-gray-700">행사 전날</h4>
+                                <h4 class="font-bold text-gray-700 text-base">행사 전날</h4>
                                 <p class="text-sm text-gray-600 mt-1">주요 장식 미리 세팅하기, 음식 재료 준비, 카메라 충전 및 메모리 확인, 그리고 가장 중요한 '충분한 휴식'!</p>
                             </div>
                             <div class="timeline-item relative pb-2">
-                                <h4 class="font-bold text-gray-700">행사 당일</h4>
+                                <h4 class="font-bold text-gray-700 text-base">행사 당일</h4>
                                 <p class="text-sm text-gray-600 mt-1">아기 컨디션 최우선! 수유와 낮잠 스케줄을 지키고, 행사 직전 신선한 음식을 올린 후, 예쁜 옷으로 갈아입혀주세요.</p>
                             </div>
                         </div>
@@ -183,16 +181,15 @@
             </div>
         </section>
 
-        <!-- 3. 추억하기 -->
         <section id="cherish" class="content-section scroll-mt-20">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Step 3. 추억하기</h2>
-                <p class="mt-3 text-gray-600">백일의 감동을 오래도록 간직하는 시간. 부모가 된 100일의 여정을 축하하고, 특별한 기억을 남겨보세요.</p>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800">Step 3. 추억하기</h2>
+                <p class="mt-3 text-sm md:text-base text-gray-600">백일의 감동을 오래도록 간직하는 시간. 부모가 된 100일의 여정을 축하하고, 특별한 기억을 남겨보세요.</p>
             </div>
 
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10">
                 <blockquote class="text-center border-l-4 border-[#FADCD9] bg-gray-50 p-6 rounded-r-lg mb-10">
-                    <p class="text-base md:text-lg italic text-gray-700">"아기의 백일은 아기만의 이정표가 아닙니다. <br>잠 못 이루는 밤과 무한한 사랑으로 함께 성장하고 사랑을 키워온<br> 엄마 아빠의 100일이기도 합니다. 정말 훌륭하게 해내셨어요!"</p>
+                    <p class="text-sm md:text-base italic text-gray-700">"아기의 백일은 아기만의 이정표가 아닙니다. <br>잠 못 이루는 밤과 무한한 사랑으로 함께 성장하고 사랑을 키워온<br> 엄마 아빠의 100일이기도 합니다. 정말 훌륭하게 해내셨어요!"</p>
                 </blockquote>
 
                 <div class="text-center">
@@ -200,17 +197,17 @@
                     <div class="flex flex-col md:flex-row justify-center items-center gap-8">
                         <div class="text-center">
                             <div class="text-4xl mb-2">💌</div>
-                            <h4 class="font-bold text-gray-700">감사 메시지 전하기</h4>
+                            <h4 class="font-bold text-gray-700 text-base">감사 메시지 전하기</h4>
                             <p class="text-sm text-gray-600">축하해주신 분들께<br>진심을 담아 마음을 표현해요.</p>
                         </div>
                         <div class="text-center">
                             <div class="text-4xl mb-2">📔</div>
-                            <h4 class="font-bold text-gray-700">사진 앨범 만들기</h4>
+                            <h4 class="font-bold text-gray-700 text-base">사진 앨범 만들기</h4>
                             <p class="text-sm text-gray-600">그날의 감정과 에피소드를 담아<br>소중한 추억록을 만들어요.</p>
                         </div>
                         <div class="text-center">
                             <div class="text-4xl mb-2">✍️</div>
-                            <h4 class="font-bold text-gray-700">성장 일기 기록하기</h4>
+                            <h4 class="font-bold text-gray-700 text-base">성장 일기 기록하기</h4>
                             <p class="text-sm text-gray-600">아기의 미래에 대한 희망을<br>글로 남겨보세요.</p>
                         </div>
                     </div>
@@ -220,7 +217,7 @@
 
     </main>
 
-    <footer class="text-center py-8 mt-16 border-t border-gray-200">
+    <footer class="text-center py-20 mt-16 border-t border-gray-200">
         <p class="text-gray-500 text-sm">사랑하는 아기의 100일을 진심으로 축하합니다.</p>
     </footer>
 
