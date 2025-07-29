@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
-            font-family: 'Noto+Sans+KR', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             background-color: #FFFBF5; /* A warm, light beige background */
         }
         .card {
@@ -31,14 +31,10 @@
             margin-right: 0.75rem;
             color: #F97316; /* Orange color */
         }
-        .item-description h3 {
-            font-weight: 600;
+        .item-description {
+            font-weight: 500;
             color: #374151;
-            margin-bottom: 0.25rem;
-        }
-        .item-description p {
-            font-size: 0.9rem;
-            color: #6B7280;
+            margin-bottom: 0.5rem;
         }
         .tip-box {
             background-color: #FFF7ED; /* Light orange */
@@ -62,32 +58,23 @@
 
         <div class="p-5">
             <div class="text-center mb-6 p-4 bg-orange-50 rounded-lg">
-                <p class="font-semibold text-orange-700">아기의 건강과 복을 기원하는 떡과 과일 🍇</p>
-                <p class="text-sm text-gray-600 mt-1">어떤 의미가 담겨있는지, 어떻게 준비할지 함께 알아봐요.</p>
+                <p class="font-semibold text-orange-700">복을 기원하는 필수 음식 🍇</p>
+                <p class="text-sm text-gray-600 mt-1">의미와 준비 팁을 확인하세요.</p>
             </div>
 
             <!-- 떡 준비하기 Card -->
             <div class="card">
                 <h2 class="card-title">
                     <i data-lucide="cookie"></i>
-                    백일 떡 준비하기
+                    백일 떡
                 </h2>
-                <div class="space-y-4">
-                    <div class="item-description">
-                        <h3>✔️ 백설기</h3>
-                        <p>아기의 장수와 순수함을 의미해요. '백'이라는 숫자를 채운다는 뜻도 담겨있어 백일상의 필수 떡이에요.</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 수수팥떡</h3>
-                        <p>붉은 팥이 액운을 막아준다고 믿어, 아이의 건강한 성장을 기원하는 떡이랍니다.</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 오색송편 (선택)</h3>
-                        <p>만물의 조화를 의미하며, 아기의 앞날이 풍성하길 바라는 마음을 담아요.</p>
-                    </div>
+                <div class="space-y-3">
+                    <p class="item-description">✔️ <span class="font-bold">백설기</span>: 장수와 순수함의 의미</p>
+                    <p class="item-description">✔️ <span class="font-bold">수수팥떡</span>: 액운을 막고 건강 기원</p>
+                    <p class="item-description">✔️ <span class="font-bold">오색송편 (선택)</span>: 풍성한 앞날 기원</p>
                 </div>
                 <div class="tip-box">
-                    <p><span class="font-bold">주문 Tip!</span> 보통 떡은 1kg(반 되) 단위로 주문해요. 최소 3~5일 전에는 예약하는 것이 안전합니다!</p>
+                    <p><span class="font-bold">주문 Tip!</span> 떡은 1kg(반 되) 단위로, 최소 1~2주 전 예약!</p>
                 </div>
             </div>
 
@@ -95,28 +82,22 @@
             <div class="card">
                 <h2 class="card-title">
                      <i data-lucide="grape"></i>
-                    제철 과일 준비하기
+                    제철 과일
                 </h2>
-                <div class="space-y-4">
-                     <div class="item-description">
-                        <h3>✔️ 종류</h3>
-                        <p>계절에 맞는 신선한 과일을 2~3종류 준비해요. 색이 다채로우면 상차림이 더 예뻐 보여요. (예: 딸기, 포도, 멜론 등)</p>
-                    </div>
-                    <div class="item-description">
-                        <h3>✔️ 수량</h3>
-                        <p>과일은 보통 홀수로 올리는 것이 좋다고 해요. 종류별로 1, 3, 5개씩 예쁘게 쌓아 올려보세요.</p>
-                    </div>
+                <div class="space-y-3">
+                     <p class="item-description">✔️ <span class="font-bold">종류</span>: 색이 예쁜 제철 과일 2~3종류</p>
+                     <p class="item-description">✔️ <span class="font-bold">수량</span>: 종류별로 홀수로 올리기</p>
                 </div>
                 <div class="tip-box">
-                    <p><span class="font-bold">플레이팅 Tip!</span> 높은 접시나 2단 트레이를 활용하면 상차림이 훨씬 풍성해 보여요. 꼭지를 위로 향하게 두면 더 신선해 보인답니다.</p>
+                    <p><span class="font-bold">플레이팅 Tip!</span> 높은 접시나 2단 트레이를 활용하면 풍성해 보여요.</p>
                 </div>
             </div>
 
             <!-- CTA Button -->
             <div class="mt-2">
                 <button class="w-full bg-orange-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center">
-                    <i data-lucide="store" class="mr-2"></i>
-                    우리 동네 떡/과일 맛집 찾기
+                    다음: 한복, 의상 고르기
+                    <i data-lucide="arrow-right" class="ml-2"></i>
                 </button>
             </div>
         </div>
