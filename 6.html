@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기쁜하루 - 후기, 감동 남기기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F9F7FF; /* Light purple background */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #4A5568;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .card-title i {
+            margin-right: 0.75rem;
+            color: #8B5CF6; /* Purple color */
+        }
+        .item-description h3 {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+        .item-description p {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+        .tip-box {
+            background-color: #F5F3FF; /* Light purple */
+            border-left: 4px solid #8B5CF6;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #6D28D9;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <!-- Header -->
+        <div class="p-5 bg-violet-500 text-white flex items-center">
+             <a href="#" class="mr-4"><i data-lucide="arrow-left"></i></a>
+             <h1 class="text-xl font-bold">후기, 감동 남기기</h1>
+        </div>
+
+        <div class="p-5">
+            <div class="text-center mb-6 p-4 bg-violet-50 rounded-lg">
+                <p class="font-semibold text-violet-700">소중한 추억, 오래오래 간직하는 법 💌</p>
+                <p class="text-sm text-gray-600 mt-1">행복했던 순간을 기록하고, 다른 부모님들과도 나눠보세요.</p>
+            </div>
+
+            <!-- 후기 남기기 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                    <i data-lucide="edit-3"></i>
+                    똑똑한 후기 남기기
+                </h2>
+                <div class="space-y-4">
+                    <div class="item-description">
+                        <h3>✔️ 사진 첨부는 필수!</h3>
+                        <p>실제 상차림 사진은 다음에 준비하는 부모님들에게 가장 큰 도움이 돼요. 예쁜 우리 아기 사진도 함께라면 더 좋겠죠?</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 장단점 솔직하게</h3>
+                        <p>이용했던 업체의 좋았던 점, 아쉬웠던 점을 솔직하게 남겨주세요. 정보에 목마른 초보맘들에게 큰 힘이 됩니다.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 나만의 꿀팁 공유</h3>
+                        <p>사진 찍을 때 유용했던 소품, 아기 컨디션 조절법 등 나만의 꿀팁을 공유하면 후기가 더욱 풍성해져요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 감동 간직하기 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                     <i data-lucide="heart"></i>
+                    감동의 순간 간직하기
+                </h2>
+                <div class="space-y-4">
+                     <div class="item-description">
+                        <h3>✔️ 포토북/앨범 만들기</h3>
+                        <p>스마트폰에만 두지 말고 베스트컷을 골라 앨범으로 만들어보세요. 먼 훗날 아이에게 큰 선물이 될 거예요.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 영상 편지 남기기</h3>
+                        <p>부모님이 아기에게, 또는 아기가 스무 살의 자신에게 보내는 짧은 영상 편지를 남겨보는 건 어떨까요?</p>
+                    </div>
+                </div>
+                 <div class="tip-box">
+                    <p><span class="font-bold">함께 나눠요!</span> SNS에 #기쁜하루 #백일상 #셀프백일 등 해시태그와 함께 사진을 공유하고, 가족/친구들과도 행복한 추억을 나눠보세요!</p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-2">
+                <button class="w-full bg-violet-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-violet-600 transition-colors flex items-center justify-center">
+                    <i data-lucide="award" class="mr-2"></i>
+                    후기 남기고 포인트 받기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

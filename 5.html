@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기쁜하루 - 행사 전날, 당일 준비</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F6FEF9; /* Light green background */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #4A5568;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .card-title i {
+            margin-right: 0.75rem;
+            color: #22C55E; /* Green color */
+        }
+        .item-description h3 {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+        .item-description p {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+        .tip-box {
+            background-color: #F0FDF4; /* Light green */
+            border-left: 4px solid #22C55E;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #15803D;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <!-- Header -->
+        <div class="p-5 bg-green-500 text-white flex items-center">
+             <a href="#" class="mr-4"><i data-lucide="arrow-left"></i></a>
+             <h1 class="text-xl font-bold">행사 전날 & 당일 준비</h1>
+        </div>
+
+        <div class="p-5">
+            <div class="text-center mb-6 p-4 bg-green-50 rounded-lg">
+                <p class="font-semibold text-green-700">드디어 D-Day! 완벽한 하루를 위한 최종 점검 🗓️</p>
+                <p class="text-sm text-gray-600 mt-1">미리 준비하면 당일이 훨씬 여유롭고 행복해져요.</p>
+            </div>
+
+            <!-- 물품 도착 직후 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                    <i data-lucide="package-check"></i>
+                    택배 도착! (D-3)
+                </h2>
+                <div class="space-y-4">
+                    <div class="item-description">
+                        <h3>✔️ 대여 물품 즉시 확인! (가장 중요)</h3>
+                        <p>행사 3~4일 전 택배가 도착하면 바로 열어보세요. 누락되거나 파손된 물품이 있는지 미리 확인해야 업체에 연락해 문제를 해결하고 행사를 차질 없이 치를 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 행사 전날 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                    <i data-lucide="calendar-check-2"></i>
+                    행사 전날 체크리스트 (D-1)
+                </h2>
+                <div class="space-y-4">
+                    <div class="item-description">
+                        <h3>✔️ 떡/과일/케이크 수령</h3>
+                        <p>주문한 음식을 찾아오고 신선하게 보관해요. 당일 아침에 바로 올릴 수 있게 준비해두면 편해요.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 아기 컨디션 조절</h3>
+                        <p>목욕 후 푹 재워서 당일 최상의 컨디션을 만들어주세요. 주인공의 기분이 가장 중요하니까요!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 행사 당일 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                     <i data-lucide="clock"></i>
+                    행사 당일 타임라인 (D-Day)
+                </h2>
+                <div class="space-y-4">
+                     <div class="item-description">
+                        <h3>✔️ 아기 낮잠 시간에 상차림</h3>
+                        <p>아기가 잘 때 빠르게 상을 차리면 훨씬 수월해요. 미리 정해둔 위치에 착착 세팅하세요.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 기분 좋을 때 촬영 시작</h3>
+                        <p>아기가 막 잠에서 깨서 밥을 먹고 난 직후가 베스트! 기분이 가장 좋을 때 사진부터 찍어두세요.</p>
+                    </div>
+                </div>
+                 <div class="tip-box">
+                    <p><span class="font-bold">마음가짐 Tip!</span> 모든 것을 완벽하게 하려다 보면 지치기 쉬워요. 조금 서툴러도 괜찮아요. 가장 중요한 건 아기와 함께하는 행복한 마음입니다!</p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-2">
+                <button class="w-full bg-green-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition-colors flex items-center justify-center">
+                    <i data-lucide="message-square-heart" class="mr-2"></i>
+                    선배맘들의 생생한 후기 보러가기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
