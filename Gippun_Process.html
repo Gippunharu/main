@@ -6,10 +6,10 @@
     <!-- Chosen Palette: Warm Neutrals & Soft Pastels -->
     <!-- Application Structure Plan: The application is structured into three logical, chronological phases: 1. 준비 (Preparation), 2. 실행 (Execution), and 3. 추억 (Memories). This consolidates the original six categories into a more intuitive user journey (Before, During, After). Navigation is handled by a sticky header that allows users to smoothly scroll to each section. This structure was chosen to reduce cognitive load for new mothers, guiding them step-by-step through the process in a clear, linear, and less overwhelming manner. -->
     <!-- Visualization & Content Choices: 
-        - Report Info: Checklist -> Goal: Organize -> Viz/Presentation: Card-based grid layout with integrated notes and descriptive emojis, no checkboxes. -> Interaction: Visual clarity and easy scanning. Justification: Removes non-functional checkboxes, enhances visual appeal with emojis, and improves readability with card layout. Library/Method: HTML/Tailwind/JS.
-        - Report Info: Food & Clothing -> Goal: Inform -> Viz/Presentation: Visually distinct cards with Unicode icons (🍡, 👘). -> Interaction: Hover effects. Justification: Breaks down complex information into easily scannable visual chunks. Library/Method: HTML/Tailwind.
-        - Report Info: Day-of Prep & Photo Tips -> Goal: Guide -> Viz/Presentation: A vertical timeline for sequential tasks (with new 'Item Arrival' step) and an expanded card grid for tips (including new photography service advice spanning two columns). -> Interaction: Clear visual flow. Justification: A timeline is ideal for chronological steps, and a grid is perfect for scannable tips, now with more practical advice and improved visual balance. Library/Method: HTML/Tailwind.
-        - Report Info: Post-event reflection -> Goal: Inspire -> Viz/Presentation: Elegant blockquotes and icon-based lists. -> Interaction: Subtle fade-in animations on scroll. Justification: Shifts the tone from practical to emotional, providing a meaningful conclusion. Library/Method: HTML/Tailwind/JS.
+        - Report Info: Checklist -> Goal: Organize -> Viz/Presentation: Card-based grid layout with integrated notes and descriptive emojis. Timeline information is now subtly integrated next to the title within each card. -> Interaction: Visual clarity and easy scanning, with improved separation of information. -> Justification: Enhances readability by clearly distinguishing the item title from its timeline, making the checklist more organized and user-friendly. -> Library/Method: HTML/Tailwind/JS.
+        - Report Info: Food & Clothing -> Goal: Inform -> Viz/Presentation: Visually distinct cards with Unicode icons (🍡,  ). -> Interaction: Hover effects. -> Justification: Breaks down complex information into easily scannable visual chunks. -> Library/Method: HTML/Tailwind.
+        - Report Info: Day-of Prep & Photo Tips -> Goal: Guide -> Viz/Presentation: A vertical timeline for sequential tasks (with new 'Item Arrival' step) and an expanded card grid for tips (including new photography service advice spanning two columns). -> Interaction: Clear visual flow. -> Justification: A timeline is ideal for chronological steps, and a grid is perfect for scannable tips, now with more practical advice and improved visual balance. -> Library/Method: HTML/Tailwind.
+        - Report Info: Post-event reflection -> Goal: Inspire -> Viz/Presentation: Elegant blockquotes and icon-based lists. -> Interaction: Subtle fade-in animations on scroll. -> Justification: Shifts the tone from practical to emotional, providing a meaningful conclusion. -> Library/Method: HTML/Tailwind/JS.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <title>초보 엄마를 위한 백일상 가이드</title>
@@ -36,7 +36,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Checkbox related styles are removed as they are no longer used for functionality */
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -98,7 +97,7 @@
                         <span class="text-2xl mr-3 flex-shrink-0">💡</span>
                         <div class="flex-grow">
                             <p class="font-medium text-gray-700 korean-wrap-normal">백일상 컨셉 결정 및 예약 <span class="text-gray-500 text-xs ml-2 whitespace-nowrap">(1-2개월 전)</span></p>
-                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">기쁜하루에서 다양한 백일상을 비교하고 미리 예약하기</p>
+                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">기쁜하루에서 다양한 백일상을 비교하고 미리 예약하세요.</p>
                         </div>
                     </div>
                     <!-- Checklist Item 2 -->
@@ -106,7 +105,7 @@
                         <span class="text-2xl mr-3 flex-shrink-0">💌</span>
                         <div class="flex-grow">
                             <p class="font-medium text-gray-700 korean-wrap-normal">손님 목록 및 초대장 만들기 (생략가능) <span class="text-gray-500 text-xs ml-2 whitespace-nowrap">(1-2개월 전)</span></p>
-                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">가족, 친지들에게 보낼 초대장을 만들어보세요. Canva, 미리캔버스 등의 사이트를 이용하시면 좀 더 쉽게 만들 수 있어요.</p>
+                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">Canva, 미리캔버스 등 디자인 툴을 활용하면 쉽고 예쁜 초대장을 만들 수 있어요.</p>
                         </div>
                     </div>
                     <!-- Checklist Item 3 -->
@@ -114,7 +113,7 @@
                         <span class="text-2xl mr-3 flex-shrink-0">🏠</span>
                         <div class="flex-grow">
                             <p class="font-medium text-gray-700 korean-wrap-normal">장소 선정 (집/외부) <span class="text-gray-500 text-xs ml-2 whitespace-nowrap">(1-2개월 전)</span></p>
-                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">호텔이나 식당처럼 많은 사람들이 모이는 곳은 아기에게 스트레스일 수 있어요. 편안한 집에서 가족끼리 행사를 하는게 아기에겐 편안함을 준답니다.</p>
+                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">아기에게 편안한 집에서 가족끼리 진행하는 것이 좋아요. 호텔이나 식당은 아기에게 스트레스가 될 수 있답니다.</p>
                         </div>
                     </div>
                     <!-- Checklist Item 4 -->
@@ -122,10 +121,10 @@
                         <span class="text-2xl mr-3 flex-shrink-0">👗</span>
                         <div class="flex-grow">
                             <p class="font-medium text-gray-700 korean-wrap-normal">아기 및 가족 의상 준비 <span class="text-gray-500 text-xs ml-2 whitespace-nowrap">(2-3주 전)</span></p>
-                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">백일상을 대여할 때는 아기 한복도 꼼꼼히 살펴보세요. 엄마, 아빠도 편안한 옷을 입으시는게 좋아요.</p>
+                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">백일상 대여 시 아기 한복을 꼼꼼히 확인하고, 엄마 아빠도 편안한 의상을 준비하세요.</p>
                         </div>
                     </div>
-                    <!-- Checklist Item 5 (New Title and detailed description) -->
+                    <!-- Checklist Item 5 -->
                     <div class="bg-gray-50 rounded-lg p-4 flex items-start">
                         <span class="text-2xl mr-3 flex-shrink-0">🎈</span>
                         <div class="flex-grow">
@@ -133,20 +132,20 @@
                             <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">백일상에 올릴 풍선, 토퍼, 기저귀케이크, 선물 등을 미리 준비하세요.</p>
                         </div>
                     </div>
-                    <!-- Checklist Item 6 (Updated detailed description) -->
+                    <!-- Checklist Item 6 -->
                     <div class="bg-gray-50 rounded-lg p-4 flex items-start">
                         <span class="text-2xl mr-3 flex-shrink-0">🎂</span>
                         <div class="flex-grow">
                             <p class="font-medium text-gray-700 korean-wrap-normal">떡 및 케이크 주문 <span class="text-gray-500 text-xs ml-2 whitespace-nowrap">(2-3주 전)</span></p>
-                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">백일상에 올릴 떡은 미리미리 준비해야 해요. 픽업 날짜는 당일 아침이 좋아요.</p>
+                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">백일상 떡과 케이크는 미리 주문하고, 픽업은 행사 당일 아침으로 지정하는 것이 좋아요.</p>
                         </div>
                     </div>
-                    <!-- Checklist Item 7 (Updated detailed description) -->
+                    <!-- Checklist Item 7 -->
                     <div class="bg-gray-50 rounded-lg p-4 flex items-start">
                         <span class="text-2xl mr-3 flex-shrink-0">🍎</span>
                         <div class="flex-grow">
                             <p class="font-medium text-gray-700 korean-wrap-normal">과일 및 식재료 구매 <span class="text-gray-500 text-xs ml-2 whitespace-nowrap">(1주 전)</span></p>
-                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">과일은 덩어리가 너무 크지 않고 알이 많지 않은 과일이 좋아요. 수박, 멜론 등은 존재감이 너무 크고, 알이 너무 많은 포도, 바나나는 상이 어수선해진답니다. 한라봉, 오렌지, 망고, 샤인머스캣, 사과, 배 정도가 예쁘게 잘 나와요.</p>
+                            <p class="text-gray-600 text-xs mt-1 korean-wrap-normal">상차림에 어울리는 과일을 선택하세요. 덩어리가 크거나 알이 많은 과일(수박, 포도, 바나나 등)보다는 한라봉, 오렌지, 망고, 샤인머스캣, 사과, 배처럼 깔끔한 과일이 좋아요.</p>
                         </div>
                     </div>
                 </div>
@@ -307,3 +306,4 @@
     </script>
 </body>
 </html>
+ 
