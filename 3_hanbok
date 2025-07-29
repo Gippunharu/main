@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기쁜하루 - 한복, 의상 고르기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #FEF6F8; /* Light pink background */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #4A5568;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .card-title i {
+            margin-right: 0.75rem;
+            color: #EC4899; /* Pink color */
+        }
+        .item-description h3 {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+        .item-description p {
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+        .tip-box {
+            background-color: #FCE7F3; /* Light pink */
+            border-left: 4px solid #EC4899;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #831843;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        <!-- Header -->
+        <div class="p-5 bg-pink-500 text-white flex items-center">
+             <a href="#" class="mr-4"><i data-lucide="arrow-left"></i></a>
+             <h1 class="text-xl font-bold">한복, 의상 고르기</h1>
+        </div>
+
+        <div class="p-5">
+            <div class="text-center mb-6 p-4 bg-pink-50 rounded-lg">
+                <p class="font-semibold text-pink-700">우리 아기를 위한 첫 번째 파티룩 👗</p>
+                <p class="text-sm text-gray-600 mt-1">어떤 옷이 좋을까? 기쁜하루가 선택을 도와드릴게요.</p>
+            </div>
+
+            <!-- 의상 종류 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                    <i data-lucide="shirt"></i>
+                    어떤 종류의 옷이 있을까?
+                </h2>
+                <div class="space-y-4">
+                    <div class="item-description">
+                        <h3>✔️ 전통 한복</h3>
+                        <p>가장 대표적인 백일 의상이에요. 색동저고리, 조바위 등으로 곱고 단아한 모습을 연출할 수 있어요.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 드레스 & 턱시도</h3>
+                        <p>현대적인 상차림에 잘 어울려요. 사랑스러운 공주님, 꼬마 신사 컨셉으로 꾸며줄 수 있답니다.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 컨셉 의상</h3>
+                        <p>옛날 교복, 동물 잠옷 등 재미있고 개성 있는 사진을 남기고 싶을 때 인기가 많아요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 선택 팁 Card -->
+            <div class="card">
+                <h2 class="card-title">
+                     <i data-lucide="lightbulb"></i>
+                    의상 선택 & 대여 팁
+                </h2>
+                <div class="space-y-4">
+                     <div class="item-description">
+                        <h3>✔️ 사이즈 확인</h3>
+                        <p>같은 개월 수라도 아기마다 체형이 달라요. 대여 전 아기의 키, 몸무게, 가슴둘레를 꼭 확인하세요.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 소재 확인</h3>
+                        <p>아기 피부는 예민해요. 부드러운 면 소재나 KC 인증을 받은 안전한 소재인지 확인하는 것이 좋아요.</p>
+                    </div>
+                    <div class="item-description">
+                        <h3>✔️ 컨셉 통일</h3>
+                        <p>백일상의 전체적인 색감이나 분위기와 어울리는 의상을 선택하면 훨씬 예쁜 사진을 남길 수 있어요.</p>
+                    </div>
+                </div>
+                 <div class="tip-box">
+                    <p><span class="font-bold">예약 Tip!</span> 인기 디자인은 금방 마감돼요. 상차림 예약 시점에 의상도 함께, 최소 한 달 전에는 예약하는 걸 추천해요!</p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-2">
+                <button class="w-full bg-pink-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-pink-600 transition-colors flex items-center justify-center">
+                    <i data-lucide="shopping-bag" class="mr-2"></i>
+                    인기 백일 의상 보러가기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
