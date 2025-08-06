@@ -11,36 +11,36 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #FDFBFA; /* 실제 사이트와 비슷한 배경색 */
+            background-color: white; /* 배경색을 흰색으로 변경하여 여백처럼 보이지 않게 함 */
         }
     </style>
 </head>
 <body class="flex items-center justify-center">
 
-    <!-- 전체 컨테이너: 내부 상하 여백(padding)을 줄였습니다. -->
-    <div class="w-full max-w-xs mx-auto bg-white p-4 rounded-2xl border border-gray-200/80 shadow-sm">
+    <!-- 전체 컨테이너: 내부 상하 여백(padding)을 최소화했습니다. -->
+    <div class="w-full max-w-xs mx-auto bg-white p-3 rounded-2xl">
         
-        <!-- 섹션 제목: 상하 여백(margin)을 줄였습니다. -->
-        <div class="text-center mb-6">
-            <h2 class="text-lg sm:text-xl font-bold text-[#4E4A47] leading-relaxed">우리 아기 백일상,<br>더 이상 고민하지 마세요.</h2>
-            <p class="text-sm text-gray-500 mt-2">기쁜하루가 엄마의 모든 고민을 덜어드릴게요.</p>
+        <!-- 섹션 제목: 상하 여백(margin)을 최소화했습니다. -->
+        <div class="text-center mb-4">
+            <h2 class="text-lg sm:text-xl font-bold text-[#4E4A47] leading-tight">우리 아기 백일상,<br>더 이상 고민하지 마세요.</h2>
+            <p class="text-sm text-gray-500 mt-1">기쁜하루가 엄마의 모든 고민을 덜어드릴게요.</p>
         </div>
 
-        <!-- 3가지 약속 리스트: 항목 간 간격(space-y)을 줄였습니다. -->
-        <div class="space-y-4">
+        <!-- 3가지 약속 리스트: 항목 간 간격(space-y)을 최소화했습니다. -->
+        <div class="space-y-3">
 
             <!-- 1. 검증된 프리미엄 브랜드 -->
             <div class="flex items-start space-x-3">
                 <!-- 아이콘 -->
-                <div class="flex-shrink-0 mt-1">
-                    <svg class="h-6 w-6 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
                 <!-- 텍스트 내용 -->
                 <div>
-                    <h3 class="text-sm font-bold text-[#6D5B4B] mb-1">검증된 프리미엄 브랜드</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
+                    <h3 class="text-sm font-bold text-[#6D5B4B] mb-0.5">검증된 프리미엄 브랜드</h3>
+                    <p class="text-xs text-gray-600 leading-normal">
                         선배맘 후기로 검증된,<br>감각적인 디자인의 브랜드만<br>까다롭게 모았어요.
                     </p>
                 </div>
@@ -49,16 +49,16 @@
             <!-- 2. 투명한 가격 정보 -->
             <div class="flex items-start space-x-3">
                 <!-- 아이콘 -->
-                <div class="flex-shrink-0 mt-1">
-                    <svg class="h-6 w-6 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
                       <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
                     </svg>
                 </div>
                 <!-- 텍스트 내용 -->
                 <div>
-                    <h3 class="text-sm font-bold text-[#6D5B4B] mb-1">투명한 가격 정보</h3>
-                    <p class="text-xs text-gray-600 leading-relaxed">
+                    <h3 class="text-sm font-bold text-[#6D5B4B] mb-0.5">투명한 가격 정보</h3>
+                    <p class="text-xs text-gray-600 leading-normal">
                         브랜드별로 가격표시 방법이 달라 헷갈리셨죠?<br>
                         최종 가격을 예측하기 쉽도록<br>
                         배송비 포함 가격으로 통일해서 보여드려요.<br>
@@ -70,14 +70,14 @@
             <!-- 3. 압도적인 시간 절약 -->
             <div class="flex items-start space-x-3">
                 <!-- 아이콘 -->
-                <div class="flex-shrink-0 mt-1">
-                    <svg class="h-6 w-6 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
                 <!-- 텍스트 내용 -->
                 <div>
-                    <h3 class="text-sm font-bold text-[#6D5B4B] mb-1">압도적인 시간 절약</h3>
+                    <h3 class="text-sm font-bold text-[#6D5B4B] mb-0.5">압도적인 시간 절약</h3>
                     <p class="text-xs text-gray-600 leading-relaxed">
                         더 이상 여기저기 문의하고,<br>
                         손품파느라 고생하지 마세요.<br>
