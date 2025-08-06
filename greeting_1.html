@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기쁜하루 3가지 약속 (가로형 반응형)</title>
+    <title>기쁜하루 3가지 약속 (컴팩트 버전)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,73 +11,64 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #FDFBFA; /* 실제 사이트와 비슷한 배경색 */
+            background-color: white; 
         }
     </style>
 </head>
-<body class="flex items-center justify-center p-4">
+<body class="flex items-center justify-center p-2">
 
     <!-- 전체 컨테이너 -->
-    <div class="w-full max-w-lg mx-auto">
+    <div class="w-full max-w-md mx-auto">
         
         <!-- 섹션 제목 -->
-        <div class="text-center mb-8">
-            <h2 class="text-xl sm:text-2xl font-bold text-[#4E4A47] leading-relaxed">우리 아기 백일상,<br>더 이상 고민하지 마세요.</h2>
-            <p class="text-base text-gray-500 mt-3">기쁜하루가 엄마아빠의 백일상선택 고민을 덜어드릴게요.</p>
+        <div class="text-center mb-4">
+            <h2 class="text-lg font-bold text-[#4E4A47]">우리 아기 백일상, 고민은 끝!</h2>
+            <p class="text-sm text-gray-500 mt-1">기쁜하루의 3가지 약속을 확인하세요.</p>
         </div>
 
         <!-- 3가지 약속 카드 그리드 -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="grid grid-cols-3 gap-2 text-center">
 
             <!-- 1. 검증된 프리미엄 브랜드 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-200/80 flex flex-col items-center justify-start">
+            <div class="bg-[#FBF8F3] p-4 rounded-lg">
                 <!-- 아이콘 -->
-                <div class="flex-shrink-0 mb-4">
-                    <svg class="h-8 w-8 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="flex-shrink-0 mb-2">
+                    <svg class="h-7 w-7 mx-auto text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
                 <!-- 텍스트 내용 -->
                 <div>
-                    <h3 class="text-base font-bold text-[#6D5B4B] mb-2">검증된<br>프리미엄 브랜드</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        선배맘 후기로 검증된<br>감각적인 디자인의 브랜드만<br>까다롭게 모았습니다.
-                    </p>
+                    <h3 class="text-xs font-bold text-[#6D5B4B] leading-snug">검증된<br>브랜드</h3>
                 </div>
             </div>
 
             <!-- 2. 투명한 가격 정보 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-200/80 flex flex-col items-center justify-start">
+            <div class="bg-[#FBF8F3] p-4 rounded-lg">
                 <!-- 아이콘 -->
-                <div class="flex-shrink-0 mb-4">
-                    <svg class="h-8 w-8 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="flex-shrink-0 mb-2">
+                    <svg class="h-7 w-7 mx-auto text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
                       <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
                     </svg>
                 </div>
                 <!-- 텍스트 내용 -->
                 <div>
-                    <h3 class="text-base font-bold text-[#6D5B4B] mb-2">투명한<br>가격 정보</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        헷갈리는 가격 비교는 이제 그만!<br>배송비 포함 최종 가격과 옵션을<br>한눈에 보기 쉽게 정리했어요.
-                    </p>
+                    <h3 class="text-xs font-bold text-[#6D5B4B] leading-snug">투명한<br>가격정보</h3>
                 </div>
             </div>
 
             <!-- 3. 압도적인 시간 절약 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-200/80 flex flex-col items-center justify-start">
+            <div class="bg-[#FBF8F3] p-4 rounded-lg">
                 <!-- 아이콘 -->
-                <div class="flex-shrink-0 mb-4">
-                    <svg class="h-8 w-8 text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="flex-shrink-0 mb-2">
+                    <svg class="h-7 w-7 mx-auto text-[#D4B29A]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
                 <!-- 텍스트 내용 -->
                 <div>
-                    <h3 class="text-base font-bold text-[#6D5B4B] mb-2">압도적인<br>시간 절약</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        더 이상 손품 팔며 고생 마세요.<br>구성품, 가격, 옵션을 한번에 비교하고<br>찜목록으로 쉽게 결정하세요.
-                    </p>
+                    <h3 class="text-xs font-bold text-[#6D5B4B] leading-snug">압도적<br>시간절약</h3>
                 </div>
             </div>
 
@@ -86,4 +77,3 @@
 
 </body>
 </html>
-
