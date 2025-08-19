@@ -46,7 +46,7 @@
             
                 <!-- 1. 텍스트 콘텐츠 영역 (아이콘보다 위에 보이도록 z-10 설정) -->
                 <div class="relative z-10 text-left">
-                    <h1 class="text-3xl font-medium text-gray-700 mb-10">
+                    <h1 class="text-3xl font-medium text-gray-700 mb-7">
                         기쁜하루
                     </h1>
                     <h2 class="text-2xl md:text-3xl font-bold leading-tight text-gray-800">
@@ -57,8 +57,8 @@
                         흩어져 있는 모든 백일상 정보를 한곳에 모아,<br>
                         가장 합리적인 선택을 제안합니다.
                     </p>
-                    <div class="mt-12">
-                        <a href="#" class="inline-block bg-[#A59487] text-white text-base font-bold py-4 px-10 rounded-full shadow-lg hover:bg-[#8B7D72] transition-colors duration-300 transform hover:scale-105">
+                    <div class="mt-8">
+                        <a href="#" id="guide-button" class="inline-block bg-[#A59487] text-white text-base font-bold py-3 px-10 rounded-full shadow-lg hover:bg-[#8B7D72] transition-colors duration-300 transform hover:scale-105">
                             초보엄마를 위한 백일상 가이드
                         </a>
                     </div>
@@ -102,8 +102,42 @@
                 </div>
             </div>
         </main>
-
     </div>
+
+    <!-- 아래에서 올라오는 페이지 뷰어 -->
+    <div id="page-viewer" class="fixed inset-0 bg-white z-50 transform translate-y-full transition-transform duration-500 ease-in-out">
+        <button id="close-button" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10 p-2 rounded-full bg-gray-100 hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <iframe id="content-frame" class="w-full h-full border-0" src="about:blank"></iframe>
+    </div>
+
+    <script>
+        // 필요한 요소들을 가져옵니다.
+        const openButton = document.getElementById('guide-button');
+        const closeButton = document.getElementById('close-button');
+        const pageViewer = document.getElementById('page-viewer');
+        const contentFrame = document.getElementById('content-frame');
+        const pageUrl = 'https://gippunharu.github.io/main/Gippun_process.html';
+
+        // '가이드' 버튼 클릭 이벤트
+        openButton.addEventListener('click', (e) => {
+            e.preventDefault(); // a 태그의 기본 동작(페이지 이동)을 막습니다.
+            contentFrame.src = pageUrl; // iframe에 페이지를 로드합니다.
+            pageViewer.classList.remove('translate-y-full'); // 페이지 뷰어를 화면 안으로 올립니다.
+        });
+
+        // '닫기' 버튼 클릭 이벤트
+        closeButton.addEventListener('click', () => {
+            pageViewer.classList.add('translate-y-full'); // 페이지 뷰어를 화면 아래로 내립니다.
+            // 애니메이션이 끝난 후 iframe 내용을 비워서 리소스를 정리합니다.
+            setTimeout(() => {
+                contentFrame.src = 'about:blank';
+            }, 500); // CSS transition 시간과 일치시킵니다.
+        });
+    </script>
 
 </body>
 </html>
